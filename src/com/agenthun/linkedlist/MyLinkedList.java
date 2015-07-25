@@ -20,4 +20,39 @@ public class MyLinkedList {
 
         temp.next = newNode;
     }
+
+    public Boolean deleteNode(int index) {
+        if (index < 1 || index > length()) {
+            return false;
+        }
+        if (index == 1) {
+            head = head.next;
+            return true;
+        }
+
+        int i = 1;
+        Node preNode = head;
+        Node curNode = preNode.next;
+        while (curNode != null) {
+            if (i == index) {
+                preNode.next = curNode.next;
+                return true;
+            }
+            preNode = curNode;
+            curNode = curNode.next;
+            i++;
+        }
+        return true;
+    }
+
+    public int length() {
+        int length = 0;
+        Node temp = head;
+        while (temp != null) {
+            length++;
+            temp = temp.next;
+        }
+        return length;
+    }
+
 }
