@@ -1,0 +1,23 @@
+package com.agenthun.linkedlist;
+
+/**
+ * Created by Agent Henry on 2015/7/25.
+ */
+public class MyLinkedList {
+    Node head = null;
+
+    //在链尾插入数据
+    public void addNode(int d) {
+        Node newNode = new Node(d);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+
+        temp.next = newNode;
+    }
+}
