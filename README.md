@@ -7,3 +7,6 @@
     FindElem 找倒数第K个元素
     ReverseIteratively 反转链表
     PrintListReversely 反转打印输出
+    SearchMid 查找中间结点
+    IsLoop 是否有环,环入口
+    DeleteNodeAdv 不知道头指针,删除结点
