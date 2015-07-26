@@ -10,3 +10,4 @@
     SearchMid 查找中间结点
     IsLoop 是否有环,环入口
     DeleteNodeAdv 不知道头指针,删除结点
+    IsIntersect 判断两链表是否相交,第一个相交点
