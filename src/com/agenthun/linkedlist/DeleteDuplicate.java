@@ -3,8 +3,8 @@ package com.agenthun.linkedlist;
 /**
  * Created by Agent Henry on 2015/7/26.
  */
-public class DeleteDuplicate {
-    public static void deleteDuplicate(Node head) {
+public class DeleteDuplicate extends MyLinkedList {
+    public void deleteDuplicate(Node head) {
         Node p = head;
         while (p != null) {
             Node q = p;
